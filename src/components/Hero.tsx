@@ -202,35 +202,26 @@ export default function Hero() {
 
             </div>
 
-            {/* Premium Partner Brand Logos (Floating underneath model container) */}
+            {/* Elegant Made-up Brand Logo */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="flex items-center justify-center gap-10 mt-12 w-full text-charcoal-base font-semibold"
+              className="flex items-center justify-center mt-12 w-full text-charcoal-base select-none"
             >
-              {/* Madalen */}
-              <div className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity duration-300 select-none">
-                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-charcoal-base text-white text-xs font-bold font-serif">M</span>
-                <span className="text-xs uppercase tracking-wider font-extrabold text-[11px]">Madalen</span>
-              </div>
-              
-              {/* Horizon */}
-              <div className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity duration-300 select-none">
-                {/* 4-corner Star Custom SVG */}
-                <svg className="h-5 w-5 fill-charcoal-base" viewBox="0 0 24 24">
-                  <path d="M12 0l3.09 9h9.09l-7.36 5.4 2.82 9-7.64-5.6-7.64 5.6 2.82-9-7.36-5.4h9.09z" />
+              <div className="flex items-center gap-3 opacity-75 hover:opacity-100 transition-opacity duration-300">
+                {/* Custom Organic Flower / Sun Seal */}
+                <svg className="h-7 w-7 stroke-charcoal-base fill-none stroke-[1.25]" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8V16" />
+                  <path d="M8 12H16" />
+                  <path d="M9.17 9.17L14.83 14.83" />
+                  <path d="M9.17 14.83L14.83 9.17" />
                 </svg>
-                <span className="text-xs uppercase tracking-wider font-extrabold text-[11px]">Horizon</span>
-              </div>
-
-              {/* Xeno */}
-              <div className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity duration-300 select-none">
-                {/* Rhombus Custom SVG */}
-                <svg className="h-5.5 w-5.5 fill-charcoal-base" viewBox="0 0 24 24">
-                  <path d="M12 2L2 12l10 10 10-10L12 2zm0 4.5l5.5 5.5-5.5 5.5-5.5-5.5 5.5-5.5z" />
-                </svg>
-                <span className="text-xs uppercase tracking-wider font-extrabold text-[11px]">Xeno</span>
+                <div className="flex flex-col items-start leading-none">
+                  <span className="text-[11px] font-extrabold uppercase tracking-[0.25em] font-sans">Lumière Lab</span>
+                  <span className="text-[8px] font-bold uppercase tracking-[0.35em] text-charcoal-dim mt-1">Dermatological Botanical Collective</span>
+                </div>
               </div>
             </motion.div>
 
