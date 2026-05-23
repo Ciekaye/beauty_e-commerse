@@ -132,15 +132,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section: Copyright & Secure Badges */}
-        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 gap-4 text-[10px] text-white/50">
-          <div>
-            &copy; {new Date().getFullYear()} Lumière Beauty Collective. All rights reserved.
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-6 text-[10px] text-white/50 text-center md:text-left">
+          <div className="space-y-2">
+            <div>
+              &copy; {new Date().getFullYear()} Lumière Beauty Collective. All rights reserved.
+            </div>
+            <p className="max-w-md text-[9px] text-white/40 leading-relaxed italic">
+              Disclaimer: Lumière is a completely fictional skincare brand. This website is built purely as a premium portfolio demonstration by Cyvera Digitals. All products, formulations, and statements are entirely fictional.
+            </p>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <span className="flex items-center gap-1.5 border border-white/10 bg-white/3 py-1 px-2.5 rounded-md text-white/60">
+            <span className="flex items-center gap-1.5 border border-white/10 bg-white/5 py-1 px-2.5 rounded-md text-white/60">
               <ShieldCheck className="h-3.5 w-3.5 text-sage-olive" />
               Secure 256-bit SSL Checkout
             </span>
