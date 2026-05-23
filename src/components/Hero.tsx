@@ -47,9 +47,8 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="flex items-center gap-2 text-[10px] sm:text-xs font-extrabold tracking-widest text-coral-dark uppercase"
+                className="text-[10px] sm:text-xs font-extrabold tracking-widest text-coral-dark uppercase"
               >
-                <span className="flex h-1.5 w-1.5 rounded-full bg-coral-peach animate-pulse" />
                 New Collection Available
               </motion.div>
 
