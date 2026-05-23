@@ -3,7 +3,7 @@ import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 
 export const metadata: Metadata = {
-  title: "Glamoura - Premium Beauty E-Commerce",
+  title: "Lumière - Premium Beauty E-Commerce",
   description: "A gorgeous, high-end e-commerce experience for curated skincare and makeup. Shop our custom Hyaluronic Cleansers, Eyeshadows, and more.",
 };
 

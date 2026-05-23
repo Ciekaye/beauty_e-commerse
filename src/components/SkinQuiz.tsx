@@ -168,10 +168,10 @@ export default function SkinQuiz() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sage-light px-3 py-1 text-xs font-bold text-sage-dark border border-sage-olive/20 uppercase tracking-widest">
-            <Sparkles className="h-3 w-3" />
-            Glamoura AI Consultation
-          </div>
+          <span className="text-[10px] sm:text-xs font-extrabold tracking-widest text-sage-dark uppercase flex items-center justify-center gap-2">
+            <Sparkles className="h-3.5 w-3.5 text-coral-peach animate-pulse" />
+            Lumière AI Consultation
+          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold font-serif text-charcoal-base">
             Find Your Match in 60 Seconds
           </h2>
@@ -228,21 +228,21 @@ export default function SkinQuiz() {
                       <button
                         key={option.value}
                         onClick={() => handleSelectOption(quizQuestions[currentStep].field, option.value)}
-                        className={`text-left p-4 rounded-2xl border transition-all duration-300 transform active:scale-99 hover:-translate-y-0.5 ${
+                        className={`text-left p-4 rounded-2xl transition-all duration-300 transform active:scale-99 hover:-translate-y-0.5 ${
                           isSelected 
-                            ? "bg-coral-light/40 border-coral-peach shadow-card" 
-                            : "bg-cream-light/30 border-cream-dark/50 hover:bg-cream-light/75 hover:border-sage-olive/40"
+                            ? "bg-coral-peach text-white shadow-premium" 
+                            : "bg-cream-light/60 text-charcoal-base hover:bg-cream-light/95 hover:shadow-card shadow-sm"
                         }`}
                       >
                         <div className="flex justify-between items-center">
-                          <span className="font-bold text-xs sm:text-sm text-charcoal-base">{option.label}</span>
+                          <span className={`font-bold text-xs sm:text-sm ${isSelected ? "text-white" : "text-charcoal-base"}`}>{option.label}</span>
                           {isSelected && (
-                            <span className="h-5 w-5 rounded-full bg-coral-peach text-white flex items-center justify-center">
+                            <span className="h-5 w-5 rounded-full bg-white text-coral-peach flex items-center justify-center">
                               <Check className="h-3.5 w-3.5 stroke-[3]" />
                             </span>
                           )}
                         </div>
-                        <p className="text-[10px] sm:text-xs text-charcoal-dim/80 mt-1">{option.description}</p>
+                        <p className={`text-[10px] sm:text-xs mt-1 transition-colors duration-300 ${isSelected ? "text-white/90" : "text-charcoal-dim/85"}`}>{option.description}</p>
                       </button>
                     );
                   })}
@@ -294,7 +294,7 @@ export default function SkinQuiz() {
                 
                 {/* Result Product Shot */}
                 <div className="md:col-span-4 flex flex-col items-center text-center space-y-3">
-                  <span className="text-[10px] text-sage-dark font-extrabold uppercase tracking-widest bg-sage-light px-3 py-1 border border-sage-olive/25 rounded-full">
+                  <span className="text-[10px] text-sage-dark font-extrabold uppercase tracking-widest">
                     {recommendation.matchScore}% Match Found
                   </span>
                   
@@ -372,7 +372,7 @@ export default function SkinQuiz() {
                     </button>
                     <button
                       onClick={handleReset}
-                      className="rounded-full border border-cream-dark/80 text-charcoal-base font-bold text-xs py-3.5 px-6 hover:bg-cream-dark/20 transition-all duration-200 flex items-center justify-center gap-2"
+                      className="rounded-full bg-cream-dark hover:bg-cream-dark/85 text-charcoal-base font-bold text-xs py-3.5 px-6 transition-all duration-200 flex items-center justify-center gap-2 shadow-sm"
                     >
                       <RotateCcw className="h-4 w-4" />
                       Retake Quiz

@@ -31,8 +31,8 @@ export default function Navbar() {
             <div className="flex-shrink-0">
               <a href="#" className="flex flex-col items-start select-none group">
                 <div className="flex items-baseline text-2xl md:text-3xl font-bold tracking-tight">
-                  <span className="text-coral-peach transition-colors duration-300 group-hover:text-coral-dark">Glam</span>
-                  <span className="text-sage-dark font-medium transition-colors duration-300 group-hover:text-sage-olive">oura</span>
+                  <span className="text-coral-peach transition-colors duration-300 group-hover:text-coral-dark">Lumi</span>
+                  <span className="text-sage-dark font-medium transition-colors duration-300 group-hover:text-sage-olive">ère</span>
                 </div>
                 <span className="text-[10px] text-charcoal-dim tracking-widest uppercase font-semibold -mt-1 scale-95 origin-left">Beauty Collective</span>
               </a>
@@ -119,8 +119,8 @@ export default function Navbar() {
                       className="absolute right-0 mt-2 w-48 rounded-2xl glass-panel shadow-premium py-2 text-sm text-charcoal-base overflow-hidden"
                     >
                       <div className="px-4 py-2 border-b border-cream-dark/40">
-                        <p className="font-semibold text-xs text-charcoal-dim">Welcome to Glamoura</p>
-                        <p className="text-[10px] text-charcoal-dim/70 truncate">guest@glamoura.com</p>
+                        <p className="font-semibold text-xs text-charcoal-dim">Welcome to Lumière</p>
+                        <p className="text-[10px] text-charcoal-dim/70 truncate">guest@lumiere.com</p>
                       </div>
                       <a href="#" className="block px-4 py-2.5 hover:bg-cream-light hover:text-coral-peach transition-colors">My Profile</a>
                       <a href="#" className="block px-4 py-2.5 hover:bg-cream-light hover:text-coral-peach transition-colors">Orders History</a>
@@ -230,7 +230,7 @@ export default function Navbar() {
                               <Trash2 className="h-3.5 w-3.5" />
                             </button>
                           </div>
-                          <p className="text-[10px] text-sage-dark font-semibold mt-0.5 uppercase tracking-wider">{item.category || "Glamoura Skincare"}</p>
+                          <p className="text-[10px] text-sage-dark font-semibold mt-0.5 uppercase tracking-wider">{item.category || "Lumière Skincare"}</p>
                         </div>
 
                         {/* Price & Quantity Adjuster */}
@@ -239,7 +239,7 @@ export default function Navbar() {
                             ${(item.price * item.quantity).toFixed(2)}
                           </span>
 
-                          <div className="flex items-center border border-cream-dark/60 rounded-full bg-cream-light px-1">
+                          <div className="flex items-center rounded-full bg-cream-dark/45 px-1.5 py-0.5 shadow-xs">
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity - 1)}
                               className="p-1 hover:text-coral-peach transition-colors"
@@ -288,7 +288,7 @@ export default function Navbar() {
                   </div>
 
                   <button 
-                    onClick={() => alert("Checkout Flow Simulated! Thank you for buying from Glamoura.")}
+                    onClick={() => alert("Checkout Flow Simulated! Thank you for buying from Lumière.")}
                     className="w-full py-3.5 rounded-full bg-coral-peach hover:bg-coral-dark text-white font-bold text-sm tracking-wide shadow-premium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group"
                   >
                     Proceed to Checkout

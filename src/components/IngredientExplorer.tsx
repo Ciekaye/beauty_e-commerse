@@ -70,14 +70,14 @@ export default function IngredientExplorer() {
         
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 space-y-4">
-          <span className="text-[10px] text-sage-dark font-extrabold uppercase tracking-widest bg-sage-light px-3 py-1 border border-sage-olive/25 rounded-full">
+          <span className="text-[10px] sm:text-xs text-sage-dark font-extrabold uppercase tracking-widest block">
             Clinical Aesthetics
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold font-serif text-charcoal-base">
             Bioactive Ingredient Explorer
           </h2>
           <p className="text-xs sm:text-sm text-charcoal-dim leading-relaxed">
-            At Glamoura, science meets beauty. Click through our primary clinical components below to inspect their molecular properties, concentrations, and dermatological specifications.
+            At Lumière, science meets beauty. Click through our primary clinical components below to inspect their molecular properties, concentrations, and dermatological specifications.
           </p>
         </div>
 
@@ -92,10 +92,10 @@ export default function IngredientExplorer() {
                 <button
                   key={ing.id}
                   onClick={() => setSelectedId(ing.id)}
-                  className={`text-left p-6 rounded-3xl border transition-all duration-300 transform active:scale-99 flex items-center justify-between ${
+                  className={`text-left p-6 rounded-3xl transition-all duration-300 transform active:scale-99 flex items-center justify-between ${
                     isSelected
-                      ? "bg-white border-coral-peach shadow-premium translate-x-2"
-                      : "bg-cream-base/40 border-cream-dark/50 hover:bg-white/50"
+                      ? "bg-white shadow-premium translate-x-2 text-charcoal-base"
+                      : "bg-cream-base/40 hover:bg-white/50 text-charcoal-dim"
                   }`}
                 >
                   <div className="space-y-1">
@@ -132,7 +132,7 @@ export default function IngredientExplorer() {
                       <h3 className="text-2xl font-extrabold font-serif text-charcoal-base">{selectedIng.name}</h3>
                       <p className="text-xs text-sage-dark font-medium italic mt-0.5">{selectedIng.chemicalName}</p>
                     </div>
-                    <span className="text-xs font-black text-coral-peach uppercase tracking-widest bg-coral-light/60 px-3 py-1 border border-coral-peach/25 rounded-full self-start sm:self-auto">
+                    <span className="text-xs font-black text-coral-peach uppercase tracking-widest bg-coral-light/65 px-3 py-1 rounded-full self-start sm:self-auto">
                       {selectedIng.concentration}
                     </span>
                   </div>

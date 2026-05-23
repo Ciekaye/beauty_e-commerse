@@ -115,11 +115,11 @@ export default function Catalog() {
         {/* Header section with Filter Tabs */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div className="space-y-4 max-w-lg">
-            <span className="text-[10px] text-coral-peach font-extrabold uppercase tracking-widest bg-coral-light/60 px-3 py-1 border border-coral-peach/25 rounded-full">
+            <span className="text-[10px] sm:text-xs text-coral-peach font-extrabold uppercase tracking-widest block">
               Curated Collections
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold font-serif text-charcoal-base">
-              Shop Glamoura Best Sellers
+              Shop Lumière Best Sellers
             </h2>
             <p className="text-xs sm:text-sm text-charcoal-dim leading-relaxed">
               Explore our laboratory-certified bio-skincare and highly-pigmented mineral cosmetic collections designed to elevate your daily routine.
@@ -127,7 +127,7 @@ export default function Catalog() {
           </div>
 
           {/* Navigation Filter Tabs */}
-          <div className="flex items-center gap-1.5 bg-cream-dark/40 p-1.5 rounded-full self-start md:self-end border border-cream-dark/40">
+          <div className="flex items-center gap-1.5 bg-cream-dark/45 p-1.5 rounded-full self-start md:self-end shadow-sm">
             {(["All", "Skincare", "Makeup", "Creams"] as const).map((tab) => (
               <button
                 key={tab}
@@ -212,7 +212,7 @@ export default function Catalog() {
                     <div className="absolute bottom-4 inset-x-4 flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <button 
                         onClick={() => alert(`Product Details: ${product.name}\nBenefits: ${product.benefits.join(', ')}`)}
-                        className="h-9 w-9 rounded-full bg-white shadow-card border border-cream-dark/50 flex items-center justify-center text-charcoal-base hover:bg-cream-light transition-all active:scale-90 duration-200"
+                        className="h-9 w-9 rounded-full bg-white shadow-premium flex items-center justify-center text-charcoal-base hover:bg-cream-light transition-all active:scale-90 duration-200"
                         title="View Details"
                       >
                         <Eye className="h-4.5 w-4.5" />
@@ -265,7 +265,7 @@ export default function Catalog() {
                           image: product.image,
                           category: product.category
                         })}
-                        className="rounded-full bg-coral-peach/10 hover:bg-coral-peach border border-coral-peach/30 hover:border-coral-peach text-coral-peach hover:text-white px-4 py-2 text-xs font-bold shadow-xs hover:shadow-premium transition-all duration-300 flex items-center gap-1.5 group/btn transform active:scale-95"
+                        className="rounded-full bg-coral-peach hover:bg-coral-dark text-white px-4 py-2.5 text-xs font-bold shadow-premium transition-all duration-300 flex items-center gap-1.5 group/btn transform active:scale-95"
                       >
                         <ShoppingBag className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:-rotate-6" />
                         Add to Bag

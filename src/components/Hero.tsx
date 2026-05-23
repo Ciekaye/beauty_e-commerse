@@ -47,10 +47,10 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 rounded-full bg-coral-light/55 px-4 py-1.5 border border-coral-peach/25"
+                className="flex items-center gap-2 text-[10px] sm:text-xs font-extrabold tracking-widest text-coral-dark uppercase"
               >
-                <span className="flex h-2 w-2 rounded-full bg-coral-peach animate-pulse" />
-                <span className="text-[10px] sm:text-xs font-bold tracking-wider text-coral-dark uppercase">New Collection Available</span>
+                <span className="flex h-1.5 w-1.5 rounded-full bg-coral-peach animate-pulse" />
+                New Collection Available
               </motion.div>
 
               <motion.h1
@@ -193,7 +193,7 @@ export default function Hero() {
               >
                 <Image
                   src="/hero-model.png"
-                  alt="Beautiful model representing Glamoura organic skin collective holding ranunculus flowers"
+                  alt="Beautiful model representing Lumière organic skin collective holding ranunculus flowers"
                   fill
                   className="object-cover object-center scale-102 hover:scale-105 transition-transform duration-700 ease-out"
                   priority

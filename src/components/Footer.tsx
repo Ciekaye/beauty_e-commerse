@@ -28,7 +28,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="md:col-span-4 space-y-6">
             <div className="flex flex-col">
-              <span className="text-3xl font-black tracking-tight text-coral-peach">Glamoura</span>
+              <span className="text-3xl font-black tracking-tight text-coral-peach">Lumière</span>
               <span className="text-[10px] text-white/50 tracking-widest uppercase font-semibold mt-0.5">Beauty Collective</span>
             </div>
             <p className="text-xs text-white/70 max-w-xs leading-relaxed">
@@ -83,7 +83,7 @@ export default function Footer() {
           {/* Newsletter Form */}
           <div className="md:col-span-4 space-y-6">
             <div className="space-y-2">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-white/50">Glamoura Newsletter</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-white/50">Lumière Newsletter</h4>
               <p className="text-xs text-white/70 leading-relaxed">
                 Join the inner collective. Receive dermatologist advice, custom routines, and 15% off your first order.
               </p>
@@ -134,7 +134,7 @@ export default function Footer() {
         {/* Bottom Section: Copyright & Secure Badges */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 gap-4 text-[10px] text-white/50">
           <div>
-            &copy; {new Date().getFullYear()} Glamoura Beauty Collective. All rights reserved.
+            &copy; {new Date().getFullYear()} Lumière Beauty Collective. All rights reserved.
           </div>
 
           <div className="flex items-center gap-6">

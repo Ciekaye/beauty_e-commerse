@@ -33,7 +33,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   // Load cart from localStorage on mount
   useEffect(() => {
-    const savedCart = localStorage.getItem("glamoura_cart");
+    const savedCart = localStorage.getItem("lumiere_cart");
     if (savedCart) {
       try {
         setCart(JSON.parse(savedCart));
@@ -45,7 +45,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   // Save cart and recalculate totals on change
   useEffect(() => {
-    localStorage.setItem("glamoura_cart", JSON.stringify(cart));
+    localStorage.setItem("lumiere_cart", JSON.stringify(cart));
     
     // Calculate total items count
     const count = cart.reduce((acc, item) => acc + item.quantity, 0);
