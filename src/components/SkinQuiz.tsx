@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useCart } from "@/context/CartContext";
-import { Sparkles, ArrowRight, RotateCcw, Check, Heart, ShieldCheck } from "lucide-react";
+import { Leaf, Droplet, ArrowRight, RotateCcw, Check, Heart, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -169,8 +169,8 @@ export default function SkinQuiz() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 space-y-4">
           <span className="text-[10px] sm:text-xs font-extrabold tracking-widest text-sage-dark uppercase flex items-center justify-center gap-2">
-            <Sparkles className="h-3.5 w-3.5 text-coral-peach animate-pulse" />
-            Lumière AI Consultation
+            <Leaf className="h-3.5 w-3.5 text-coral-peach animate-pulse" />
+            Lumière Skin Consultation
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold font-serif text-charcoal-base">
             Find Your Match in 60 Seconds
@@ -271,10 +271,10 @@ export default function SkinQuiz() {
                     transition={{ repeat: Infinity, duration: 2.5, ease: "linear" }}
                     className="absolute inset-2 rounded-full border border-dotted border-sage-olive"
                   />
-                  <Sparkles className="h-8 w-8 text-coral-peach animate-pulse" />
+                  <Droplet className="h-8 w-8 text-coral-peach animate-pulse" />
                 </div>
                 <div className="space-y-1.5">
-                  <h4 className="font-serif font-bold text-lg text-charcoal-base">AI Formula Matching...</h4>
+                  <h4 className="font-serif font-bold text-lg text-charcoal-base">Formulating Skin Match...</h4>
                   <p className="text-xs text-charcoal-dim max-w-xs mx-auto">
                     Analyzing lipid barrier thickness, ingredient concentration tolerance, and hydration retention coefficients.
                   </p>
@@ -350,7 +350,7 @@ export default function SkinQuiz() {
                       <span>Dermatologist Approved</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <Sparkles className="h-4 w-4 text-coral-peach" />
+                      <Leaf className="h-4 w-4 text-coral-peach" />
                       <span>100% Vegan & Bio-Clean</span>
                     </div>
                   </div>

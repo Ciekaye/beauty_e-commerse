@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sparkles, Check, HelpCircle, ShieldAlert, Award } from "lucide-react";
+import { Droplet, Check, HelpCircle, ShieldAlert, Award } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Ingredient {
@@ -107,7 +107,7 @@ export default function IngredientExplorer() {
                   <span className={`h-8 w-8 rounded-full flex items-center justify-center transition-all ${
                     isSelected ? 'bg-coral-peach text-white scale-110' : 'bg-cream-dark/55 text-charcoal-dim'
                   }`}>
-                    <Sparkles className="h-4.5 w-4.5" />
+                    <Droplet className="h-4.5 w-4.5" />
                   </span>
                 </button>
               );
